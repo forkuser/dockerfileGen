@@ -138,7 +138,7 @@
             /* Save as file*/
             if (document.getElementById("save").checked) {
                 var hiddenElement = document.createElement('a');
-                hiddenElement.href = 'data:attachment/text,' + encodeURI(result);
+                hiddenElement.href = 'data:attachment/text,' + encodeURIComponent(result);
                 hiddenElement.target = '_blank';
                 hiddenElement.download = 'dockerfile.txt';
                 hiddenElement.click();
